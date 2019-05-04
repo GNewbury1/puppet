@@ -10,6 +10,7 @@ class profile::base (
       }
     }
     'Windows' : {
+		include profile::base::windows
     }
   }
 }
