@@ -1,0 +1,2 @@
+---
+profile::puppet_agent::server: 'puppet-master.lan'
