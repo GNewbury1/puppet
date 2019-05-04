@@ -1,2 +1,3 @@
 ---
 profile::puppet_agent::server: 'puppet-master.lan'
+profile::base::message: 'Managed by Puppet\n'

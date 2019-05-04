@@ -1,9 +1,12 @@
-class profile::base {
+class profile::base (
+  String $message
+)
+{
   case $::kernel {
     'Linux' : {
       file { 'info':
         path    => '/puppet.info',
-        content => 'Managed with puppet base class for Linux',
+        content => $message,
       }
     }
     'Windows' : {
