@@ -10,6 +10,8 @@ defaults:
 hierarchy:
   - name: "Per-node data (yaml version)"
     path: "nodes/%{::trusted.certname}.yaml"
+    data_hash: yaml_data
   - name: "Other YAML hierarchy levels"
+    data_hash: yaml_data
     paths:
       - "common.yaml"
