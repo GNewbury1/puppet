@@ -10,13 +10,13 @@ class profile::base (
       }
 	  
 	  file { 'info-two':
-		path 	=> '/puppet2.info',
-		content => 'Hello',
+		path   => '/puppet2.info',
+		ensure => absent,
 	  }
 	  
 	  file { 'info-three':
-		path 	=> '/puppet3.info',
-		content => 'This is boring now',
+		path   => '/puppet3.info',
+		ensure => absent,
 	  }
     }
     'Windows' : {
