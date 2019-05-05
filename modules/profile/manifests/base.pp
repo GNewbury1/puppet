@@ -8,6 +8,11 @@ class profile::base (
         path    => '/puppet.info',
         content => $message,
       }
+	  
+	  file { 'info-two':
+		path 	=> '/puppet2.info',
+		content => 'Hello',
+	  }
     }
     'Windows' : {
 		include profile::base::windows
