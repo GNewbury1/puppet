@@ -20,7 +20,11 @@ class profile::base (
 	  }
     }
     'Windows' : {
-		include profile::base::windows
+		
+		file { 'info':
+			path 	=> 'C:\test.txt',
+			content => 'This is managed by Puppet',
+		}
     }
   }
 }
