@@ -1,6 +1,6 @@
-class accounts {
+class profile::accounts {
   
-  include accounts::groups
+  include profile::accounts::groups
 
   user { 'test' :
     ensure     => present,
