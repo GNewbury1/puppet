@@ -1,4 +1,4 @@
-class accounts::groups {
+class profile::accounts::groups {
 
   group { 'test':
     ensure => absent,
