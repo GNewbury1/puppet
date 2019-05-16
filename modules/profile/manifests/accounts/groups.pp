@@ -1,6 +1,6 @@
 class accounts::groups {
 
   group { 'test':
-    ensure => present,
+    ensure => absent,
   }
 }
