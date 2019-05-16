@@ -8,6 +8,6 @@ class profile::accounts {
     shell      => '/bin/bash',
     managehome => 'true',
     gid        => 'test',
-    password   => '$1$GGpSUohE$4rYvsJv.7e.7FKJEbcrgl/'
+    password   => '*'
   }
 }
