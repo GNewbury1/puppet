@@ -9,11 +9,11 @@ class profile::stash {
     jvm_xmx    => '512M',
     dburl      => $db_host,
     dbpassword => $db_pass,
-    javahome   => '/usr/lib/jvm/java-1.11.0-openjdk-amd64'
+    javahome   => '/usr/lib/jvm/java-1.8.0-openjdk-amd64'
   }
 
   class { 'java':
-    package => 'java-1.8.0-openjdk-devel',
+    distribution => 'jre',
 
   }
 
