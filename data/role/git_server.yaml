@@ -2,3 +2,4 @@ profile::mysql::host: 'localhost'
 profile::mysql::user: 'stash'
 profile::mysql::pass: '$1$qZ3ahaF7$DiBNXQYnSGmQlCa7ojCZo.'
 profile::mysql::perm: ['ALL']
+profile::mysql::name: 'stash'
