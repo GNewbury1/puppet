@@ -5,8 +5,8 @@ class profile::stash {
 
   class { 'stash':
     version => '6.4',
-    java_xms => '512M',
-    java_xmx => '512M',
+    jvm_xms => '512M',
+    jvm_xmx => '512M',
     dburl => $db_host,
     dbpassword => $db_pass,
   }
