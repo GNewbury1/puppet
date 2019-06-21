@@ -12,7 +12,7 @@ hierarchy:
     path: "nodes/%{::trusted.certname}.yaml"
     data_hash: yaml_data
   - name: "Per-role data"
-    path: "role/%{gn_role}"
+    path: "role/%{gn_role}.yaml"
     data_hash: yaml_data
   - name: "Other YAML hierarchy levels"
     data_hash: yaml_data
