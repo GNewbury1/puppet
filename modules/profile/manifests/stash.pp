@@ -4,7 +4,7 @@ class profile::stash {
   $db_host = lookup(profile::mysql::host)
 
   class { 'stash':
-    version    => '6.4',
+    version    => '4.14',
     jvm_xms    => '512M',
     jvm_xmx    => '512M',
     dburl      => $db_host,
