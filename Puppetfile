@@ -17,3 +17,6 @@ forge 'https://forge.puppet.com'
 #  :branch => 'docs_experiment'
 
 mod 'puppet/nginx', '0.16.0'
+mod 'puppet/stash', '3.1.2'
+mod 'puppet/mysql', '9.1.0'
+mod 'puppetlabs/java', '4.1.0'

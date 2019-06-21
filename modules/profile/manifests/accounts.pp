@@ -10,4 +10,13 @@ class profile::accounts {
     gid        => 'test',
     password   => '*'
   }
+
+  user { 'guy':
+    ensure     => present,
+    home       => '/home/guy',
+    shell      => '/bin/bash',
+    managehome => 'true',
+    gid        => 'guy',
+    password   => '$1$qZ3ahaF7$DiBNXQYnSGmQlCa7ojCZo.',
+  }
 }
