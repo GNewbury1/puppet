@@ -7,7 +7,7 @@ class profile::stash {
     version    => '3.3.0',
     jvm_xms    => '512M',
     jvm_xmx    => '512M',
-    dburl      => $db_host,
+    dburl      => 'localhost:3306',
     dbpassword => $db_pass,
     javahome   => '/usr/lib/jvm/java-1.8.0-openjdk-amd64'
   }
