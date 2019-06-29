@@ -13,6 +13,8 @@ class profile::wordpress {
   $wp_email = lookup(profile::wordpress::email)
   $wp_title = lookup(profile::wordpress::title)
 
+  $db_pass_enc = lookup(profile::mysql::pass_enc)
+
   class { 'wordpress':
     settings => {
       $wp_site => {
@@ -21,7 +23,7 @@ class profile::wordpress {
         dbhost        => $db_host,
         dbname        => $db_name,
         dbuser        => $db_user,
-        dbpasswd      => $db_pass,
+        dbpasswd      => $db_pass_enc,
         wpadminuser   => $wp_user,
         wpadminpasswd => $wp_pass,
         wpadminemail  => $wp_email,
