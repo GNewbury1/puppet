@@ -2,7 +2,7 @@
 class profile::wordpress {
 
   class { '::php::globals':
-    php_verrsion => '5.6'
+    php_version => '5.6'
   }
 
   class { '::php':
