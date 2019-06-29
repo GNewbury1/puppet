@@ -3,13 +3,7 @@ class profile::wordpress {
 
   class { '::php':
     extensions => {
-      mysql => {
-        multifile_settings => true,
-        settings => {
-          mysqli    => {},
-          mysqlnd   => {},
-          pdo_mysql => {},
-        }
+      php_mysqli => { }
       }
     }
   }
