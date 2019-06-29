@@ -1,5 +1,8 @@
 # Wordpress profile
 class profile::wordpress {
+
+  include '::php'
+
   $db_host = lookup(profile::mysql::host)
   $db_pass = lookup(profile::mysql::pass)
   $db_name = lookup(profile::mysql::name)
