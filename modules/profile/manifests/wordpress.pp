@@ -1,36 +1,6 @@
 # Wordpress profile
 class profile::wordpress {
 
-  class { '::php::globals':
-    php_version => '5.6'
-  }
-
-  class { '::php':
-    extensions => {
-      curl      => { },
-      date      => { },
-      dom       => { },
-      filter    => { },
-      ftp       => { },
-      gd        => { },
-      hash      => { },
-      iconv     => { },
-      json      => { },
-      libxml    => { },
-      mbstring  => { },
-      mysqli    => { },
-      openssl   => { },
-      pcre      => { },
-      posix     => { },
-      simplexml => { },
-      sockets   => { },
-      spl       => { },
-      tokenizer => { },
-      xmlreader => { },
-      zlib      => { },
-    }
-  }
-
   $db_host = lookup(profile::mysql::host)
   $db_pass = lookup(profile::mysql::pass)
   $db_name = lookup(profile::mysql::name)
