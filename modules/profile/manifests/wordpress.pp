@@ -4,7 +4,6 @@ class profile::wordpress {
   class { '::php':
     extensions => {
       php_mysqli => { }
-      }
     }
   }
 
