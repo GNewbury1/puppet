@@ -3,7 +3,9 @@ class profile::wordpress {
 
   class { '::php':
     extensions => {
-      mysql => {}
+      mysql => {
+        so_name => 'mysqli'
+      }
     }
   }
 
