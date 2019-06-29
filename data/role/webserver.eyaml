@@ -9,7 +9,7 @@ profile::mysql::pass_enc: >
     AZ6MBDA8BgkqhkiG9w0BBwEwHQYJYIZIAWUDBAEqBBBPezoSQ8/2x4f2s06m
     ZA5ZgBDdDWkvxHx/nldc7sNlU5g9]
 
-profile::wordpress::pass_enc: >
+profile::wordpress::pass: >
     ENC[PKCS7,MIIBeQYJKoZIhvcNAQcDoIIBajCCAWYCAQAxggEhMIIBHQIBADAFMAACAQEw
     DQYJKoZIhvcNAQEBBQAEggEAQS2YbqvWBe4hO/WkIMz8bgAJwBwGrbJ8EeMf
     RTVE0hpBHMAGCoS8RRyWPFJI0cta8uROgislDy7DJ7TGD2Jd3kYec0XVxLSU

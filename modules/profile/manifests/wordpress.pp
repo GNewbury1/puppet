@@ -14,7 +14,6 @@ class profile::wordpress {
   $wp_title = lookup(profile::wordpress::title)
 
   $db_pass_enc = lookup(profile::mysql::pass_enc)
-  $db_wordpress_enc = lookup(profile::wordpress::pass_enc)
 
   class { 'wordpress':
     settings => {
