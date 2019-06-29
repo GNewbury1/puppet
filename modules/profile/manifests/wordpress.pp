@@ -26,7 +26,7 @@ class profile::wordpress {
         dbuser        => $db_user,
         dbpasswd      => $db_pass_enc,
         wpadminuser   => $wp_user,
-        wpadminpasswd => $wp_pass_enc,
+        wpadminpasswd => $db_wordpress_enc,
         wpadminemail  => $wp_email,
         wptitle       => $wp_title
       }
