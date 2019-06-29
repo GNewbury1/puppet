@@ -4,7 +4,12 @@ class profile::wordpress {
   class { '::php':
     extensions => {
       mysql => {
-        so_name => 'mysqli'
+        multifile_settings => true,
+        settings => {
+          mysqli => {},
+          mysqlnd => {},
+          pdo_mysql => {},
+        }
       }
     }
   }
