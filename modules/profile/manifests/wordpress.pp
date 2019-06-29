@@ -14,6 +14,7 @@ class profile::wordpress {
   $wp_title = lookup(profile::wordpress::title)
 
   $db_pass_enc = lookup(profile::mysql::pass_enc)
+  $db_wordpress_enc = lookup(profile::wordpress::pass_enc)
 
   class { 'wordpress':
     settings => {
@@ -25,7 +26,7 @@ class profile::wordpress {
         dbuser        => $db_user,
         dbpasswd      => $db_pass_enc,
         wpadminuser   => $wp_user,
-        wpadminpasswd => $wp_pass,
+        wpadminpasswd => $wp_pass_enc,
         wpadminemail  => $wp_email,
         wptitle       => $wp_title
       }
