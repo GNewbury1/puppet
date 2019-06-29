@@ -7,6 +7,6 @@ profile::mysql::name: 'wp'
 
 profile::wordpress::user: 'guy'
 profile::wordpress::pass: '$1$qZ3ahaF7$DiBNXQYnSGmQlCa7ojCZo.'
-profile::wordpress::site: 'https://guynewbury.co.uk'
+profile::wordpress::site: 'guynewbury.co.uk'
 profile::wordpress::email: 'guyn@live.co.uk'
 profile::wordpress::title: 'Guy Newbury'
