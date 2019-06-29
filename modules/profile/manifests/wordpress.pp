@@ -3,7 +3,17 @@ class profile::wordpress {
 
   class { '::php':
     extensions => {
-      mysqli => { }
+      common   => { },
+      mbstring => { },
+      fpm      => { },
+      mysqli   => { },
+      xmlrpc   => { },
+      gd       => { },
+      xml      => { },
+      mysql    => { },
+      cli      => { },
+      zip      => { },
+      curl     => { },
     }
   }
 
