@@ -3,9 +3,16 @@ class profile::wordpress {
 
   class { '::php':
     extensions => {
-      "mysql" => {
-        'so_name' => 'mysqli'
-      }
+      mysql    => {
+        package_prefix           => 'php7.2-',
+        multifile_settings       => true,
+        extended_config_required => '0',
+        settings                 => {
+          msyqli    => {},
+          mysqlnd   => {},
+          pdo_mysql => {},
+        },
+      },
     }
   }
 
