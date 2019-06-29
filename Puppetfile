@@ -18,7 +18,7 @@ forge 'https://forge.puppet.com'
 
 mod 'puppet/nginx', '0.16.0'
 mod 'puppet/stash', '3.1.2'
-mod 'puppetlabs/mysql', '9.1.0'
+mod 'puppetlabs-mysql', '10.0.0'
 mod 'puppetlabs/java', '4.1.0'
 mod 'puppetlabs/postgresql', '6.1.0'
 mod 'puppetlabs/stdlib', '6.0.0'
