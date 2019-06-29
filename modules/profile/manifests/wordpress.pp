@@ -1,6 +1,10 @@
 # Wordpress profile
 class profile::wordpress {
 
+  class { '::php::globals':
+    php_verrsion => '5.6'
+  }
+
   class { '::php':
     extensions => {
       curl      => { },
