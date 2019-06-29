@@ -3,6 +3,7 @@ class profile::wordpress {
   $db_host = lookup(profile::mysql::host)
   $db_pass = lookup(profile::mysql::pass)
   $db_name = lookup(profile::mysql::name)
+  $db_user = lookup(profile::mysql::user)
 
   $wp_user = lookup(profile::wordpress::user)
   $wp_pass = lookup(profile::wordpress::pass)
@@ -18,6 +19,7 @@ class profile::wordpress {
         owner         => 'wp',
         dbhost        => $db_host,
         dbname        => $db_name,
+        dbuser        => $db_user,
         dbpasswd      => $db_pass,
         wpadminuser   => $wp_user,
         wpadminpasswd => $wp_pass,
