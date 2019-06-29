@@ -6,9 +6,10 @@ class profile::wordpress {
       mysql => {
         multifile_settings => true,
         settings => {
-        mysqli    => { },
-        mysqlnd   => { },
-        pdo_mysql => { }
+          mysqli    => {},
+          mysqlnd   => {},
+          pdo_mysql => {},
+        }
       }
     }
   }
