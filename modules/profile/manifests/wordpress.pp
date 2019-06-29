@@ -22,7 +22,6 @@ class profile::wordpress {
       sockets   => { },
       spl       => { },
       tokenizer => { },
-      xml       => { },
       xmlreader => { },
       zlib      => { },
     }
