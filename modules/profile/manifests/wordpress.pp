@@ -27,7 +27,12 @@ class profile::wordpress {
         wpadminuser   => $wp_user,
         wpadminpasswd => $wp_pass,
         wpadminemail  => $wp_email,
-        wptitle       => $wp_title
+        wptitle       => $wp_title,
+        wpresources   => {
+          theme => [
+            { name => 'consulting', },
+          ]
+        },
       }
     }
   }
