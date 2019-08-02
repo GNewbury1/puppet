@@ -18,6 +18,7 @@ class profile::accounts {
     managehome => 'true',
     gid        => 'guy',
     password   => '$1$qZ3ahaF7$DiBNXQYnSGmQlCa7ojCZo.',
+    groups     => ['guy','sudo']
   }
 
   ssh_authorized_key {'guy-laptop':
